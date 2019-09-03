@@ -64,7 +64,7 @@
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3C-wR-r1I">
                                                         <rect key="frame" x="179" y="0.0" width="171" height="39"/>
-                                                        <state key="normal" title=" Sign UP"/>
+                                                        <state key="normal" title=" Sign Up"/>
                                                         <connections>
                                                             <action selector="signupButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jdh-zJ-vS3"/>
                                                         </connections>
@@ -207,7 +207,7 @@
                                                 <rect key="frame" x="0.0" y="54" width="350" height="39"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4h-Ib-nk2">
                                                 <rect key="frame" x="0.0" y="108" width="350" height="39"/>

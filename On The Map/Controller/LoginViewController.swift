@@ -35,7 +35,6 @@ class LoginViewController: UIViewController {
     @IBAction func signupButtonTapped(_ sender: Any) {
         let app = UIApplication.shared
         app.open(URL(string: "https://auth.udacity.com/sign-up")!, options: [:], completionHandler: nil)
-        //performSegue(withIdentifier: "logInIdentifier", sender: nil)
     }
     
     //MARK: - handling methods

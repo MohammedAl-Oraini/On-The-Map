@@ -20,7 +20,7 @@ class OnTheMapClient {
     //MARK: networking methods
     
     class func getStudentLocations(completion: @escaping (StudentLocations?, Error?) -> Void) {
-        let request = URLRequest(url: URL(string: "https://onthemap-api.udacity.com/v1/StudentLocation?order=-updatedAt")!)
+        let request = URLRequest(url: URL(string: "https://onthemap-api.udacity.com/v1/StudentLocation?order=-updatedAt&limit=100")!)
         let session = URLSession.shared
         let task = session.dataTask(with: request) { data, response, error in
             guard let data = data else {

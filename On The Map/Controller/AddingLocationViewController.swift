@@ -40,7 +40,6 @@ class AddingLocationViewController: UIViewController {
         finishButton.isHidden = true
         setAdding(true)
         gecoder.geocodeAddressString(AddingLocationViewController.locationString, completionHandler: handleGecodeRequest(placemark:error:))
-        perform(#selector(self.animateMap), with: nil, afterDelay: 2)
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -81,8 +80,9 @@ class AddingLocationViewController: UIViewController {
         self.mapView.addAnnotations([annotation])
         self.mapView.setCenter(coordinate!, animated: true)
         
-        let region = MKCoordinateRegion(center: coordinate!, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+        let region = MKCoordinateRegion(center: coordinate!, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
         self.userRegion = region
+        perform(#selector(self.animateMap), with: nil, afterDelay: 2)
 
         setAdding(false)
         finishButton.isEnabled = true

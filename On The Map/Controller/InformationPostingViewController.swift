@@ -23,7 +23,7 @@ class InformationPostingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.linkTextField.delegate = linkTextFieldDelegate
+        linkTextField.delegate = linkTextFieldDelegate
     }
     
     // MARK: - IBAction of the information posting view
