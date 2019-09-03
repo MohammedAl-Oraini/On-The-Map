@@ -89,7 +89,7 @@ class MapViewController: UIViewController {
     //MARK: - handling methods
     
     func handleStudentLocations(students:StudentLocations?,error:Error?) {
-        guard (students?.results) != nil else {
+        guard students == nil else {
             handleMissingLocation()
             return
         }
